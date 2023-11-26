@@ -27,7 +27,7 @@ const disPlayProj = [
         name: "Potify",
         github: "https://github.com/ceejaycodes/Potify",
         live: "https://potify-seven.vercel.app/",
-        stack: "NextJs, Prisma, Google Auth",
+        stack: "Typescript, NextJs, Prisma, Google Auth",
         description: "An Online Herb Dispensary built with Stripe! "
 
     },
@@ -36,16 +36,16 @@ const disPlayProj = [
         name: "Dashboard UI",
         github: "https://github.com/ceejaycodes/dashboard-UI",
         live: "https://dashboard-ui-dusky-mu.vercel.app/",
-        stack: "NextJS Material UI, SCSS ",
+        stack: "Typescript, NextJS Material UI, SCSS ",
         description: "A Mock Dashboard for a Fintech Company"
 
     },
     {
         image: Marvel,
         name: "Marvel Ogoke",
-        github: "",
-        live: "",
-        stack: "NextJs, TailwindCSS, Zustand",
+        github: "https://github.com/ceejaycodes/marvel-ogoke-v2",
+        live: "https://marvel-ogoke-v2.vercel.app/",
+        stack: "Typescript, NextJs, TailwindCSS, Zustand",
         description: "A Portfolio Website for Marvel Ogoke"
 
     },
@@ -54,53 +54,53 @@ const disPlayProj = [
         name: "Social Media",
         github: "https://github.com/ceejaycodes/Social-Media",
         live: "http://marvelsocial.cry8.io/",
-        stack: "Python, Django, Javascript, SCSS ",
+        stack: "Python, Django, Javascript, SCSS",
         description: "A Social Media App Built wuth django and Javascript"
 
     },
     {
         image: Mail,
         name: "Mail",
-        github: "",
-        live: "",
-        stack: "",
-        description: ""
+        github: "https://github.com/ceejaycodes/Mail",
+        live: "http://marvelmail.cry8.io/",
+        stack: "Django, Javascript, SCSS, SQLITE3",
+        description: "An email applicationn built with django"
 
     },
     {
         image: Marvel1,
         name: "Marvel Ogoke",
-        github: "",
-        live: "",
-        stack:"",
-        description: ""
+        github: "https://github.com/ceejaycodes/Marvel-Ogoke",
+        live: "https://marvel-ogoke.vercel.app",
+        stack:"React, Vite, Material UI, SCSS",
+        description: "A portfolio for Marvel Ogoke"
 
     },
     {
         image: Commerce,
         name: "Commerce",
-        github: "",
-        live: "",
-        stack: "",
-        description: ""
+        github: "https://github.com/ceejaycodes/Commerce",
+        live: "https://youtu.be/gE7zcP6oMrk",
+        stack: "Django, Javascript, SCSS, SQLITE3",
+        description: "An online bidding store built on Django"
 
     },
     {
         image: Interiorize,
         name: "Interiorize",
-        github: "",
-        live: "",
-        stack: "",
-        description: ""
+        github: "https://github.com/ceejaycodes/Interiorize",
+        live: "https://youtu.be/iM7rvjiRRGA",
+        stack: "Python, Flask, SCSS, SQLITE3",
+        description: "A web app built on flask that helps users search for furniture stores close to them"
 
     },
     {
         image: SamGreen,
-        name: "finance 50",
-        github: "",
-        live: "",
-        stack: "",
-        description: ""
+        name: "Sam Green Tips",
+        github: "https://github.com/orgs/samgreentipsv2/repositories",
+        live: "https://samgreentips.com",
+        stack: "Python, Typescript, Django, React, PostgreSQL",
+        description: "A sports prediciton website"
 
     },
    

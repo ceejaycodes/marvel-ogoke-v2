@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 type Props = {}
 
 export const metadata: Metadata = {
-  title: 'MArvel Ogoke',
+  title: 'Marvel Ogoke',
   description: 'A portfolio of Marvel Ogoke',
 }
 
