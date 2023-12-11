@@ -8,7 +8,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div  className='border-t border-solid border-slate-300 text-slate-300 text-xs px-5 py-4'>
+    <div  className={`border-t border-solid border-slate-300 text-slate-300 text-xs px-5 py-4  bg-[url('../public/mohammadreza.webp')]`}>
        <div className='flex justify-between py-4'> 
         <p>Marvel.O</p>
         <p>marvel@cry8.io</p>

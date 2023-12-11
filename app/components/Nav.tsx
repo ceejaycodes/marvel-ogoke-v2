@@ -23,7 +23,7 @@ const Nav = (props: Props) => {
     const navToggle = useNavToggle();
 
   return (
-    <div>
+    <div className={`bg-[url('../public/mohammadreza.webp')] pt-3`}>
         
         <div className='mx-3 flex justify-between mt-5 pb-8'>
        <div className='flex'>
@@ -44,14 +44,14 @@ const Nav = (props: Props) => {
         </div>
             <motion.div className='cursor-pointer md:hidden' 
             
-            whileHover={{scale: 1}}
-            whileTap={{  scale: [0.7, 1, 0.7, 1, 1], rotate: [0, 0, 80, -80, 0] }}  
+            
+            whileTap={{  scale: [0.7, 1, 0.7, 1, 1] }}  
             onClick={navToggle.toggleMenu}>
             <Image className='mt-1 h-6 w-7' src={navToggle.isOpen ? Close : Open} alt='hamburger closed' width={45} height={45}/> 
             </motion.div>
             <div className='hidden md:block'>
                 <ul className=' flex  gap-8 mr-12 text-gray-400'>
-                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#about' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</a></motion.li>
@@ -60,11 +60,13 @@ const Nav = (props: Props) => {
         </div>
        { navToggle.isOpen && 
        <AnimatePresence> 
-        <motion.div  initial={{ opacity: 0, scale: 0.5 }} 
-    animate={{ opacity: 1, scale: 1 }} exit={{opacity: 0, scale: 0.5}}
-    transition={{ duration: 0.4}}  className='absolute w-screen h-screen bg-backdark text-3xl md:hidden  text-gray-700  z-10  justify-center py-20 -mt-8 '>
+        <motion.div  initial={{ opacity: 0, scale: 0.5, y: -200 }} 
+    animate={{ opacity: 1, scale: 1, y:0 }}
+     exit={{opacity: 0, x: -120}}
+    transition={{ duration: 1}}  
+    className='absolute w-screen h-screen bg-[url("../public/mohammadreza.webp")] text-3xl md:hidden  text-gray-300  z-10  justify-center py-20 -mt-8 '>
 
-            <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} exit={{opacity: 0, scale: 0.5}}className='flex flex-col gap-20 w-21 justify-center px-20' >
+            <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-20 w-21 justify-center px-20 ' >
 
             
                 <motion.li
