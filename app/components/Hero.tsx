@@ -32,7 +32,7 @@ const Hero = (props: Props) => {
     </div>
         <div>
         <a target='_blank' href='https://www.dropbox.com/scl/fi/9ue1lhypq41vxc49foq8w/Marvel-Ogoke-CV.pdf?rlkey=p9sm1twwrb421hzclxfvxigvn&dl=0'> 
-          <motion.button initial={{opacity: 0.1, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration:1}} whileHover={{opacity: 0.8, scale: 1.1, transition:{duration: 0.2}}} className='flex rounded-lg bg-white p-2 border-purple-500 text-black '>
+          <motion.button initial={{opacity: 0.1, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration:1}} whileHover={{opacity: 0.8, scale: 1.1, transition:{duration: 0.2}}} className='flex rounded-lg bg-white p-2 border-purple-500 text-black'>
             <motion.h3>View Resumé</motion.h3>
             <motion.span className='h-9 w-9 -mt-3 mx-3'>
             <Lottie animationData={Loading}/>
@@ -45,15 +45,15 @@ const Hero = (props: Props) => {
 
       <motion.div className='flex flex-col lg:flex-row-reverse '>
           <motion.div   animate={{
-          scale: [0.7, 1, 0.7, 1, 1],
-          rotate: [0, 0, 80, -80, 0],
+          scale: [0, 1],
+          opacity: [0,1],
+          y:[250,0],
           borderRadius: ["0%", "0%", "50%", "50%", "0%"]
         }}
         transition={{
-          duration: 1.5,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeatDelay: 1
+          type:"spring",
+          duration: 3
+          
         }}
         className='p-7'>
           <Image src={Avi} alt='Marvel Ogoke'  className='opacity-75 drop-shadow-2xl rounded-full' />
