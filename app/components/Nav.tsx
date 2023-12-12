@@ -21,6 +21,10 @@ type Props = {}
 const Nav = (props: Props) => {
 
     const navToggle = useNavToggle();
+    const [open, setopen] = useState(false)
+    const handleToggle = ()=>{
+        setopen(!open)
+    }
 
   return (
     <div className={`bg-[url('../public/mohammadreza.webp')] pt-3`}>
@@ -46,7 +50,7 @@ const Nav = (props: Props) => {
             
             
             whileTap={{  scale: [0.7, 1, 0.7, 1, 1] }}  
-            onClick={navToggle.toggleMenu}>
+            onClick={handleToggle}>
             <Image className='mt-1 h-6 w-7' src={navToggle.isOpen ? Close : Open} alt='hamburger closed' width={45} height={45}/> 
             </motion.div>
             <div className='hidden md:block'>
@@ -58,7 +62,7 @@ const Nav = (props: Props) => {
                 </ul>
             </div>
         </div>
-       { navToggle.isOpen && 
+       { open && 
        <AnimatePresence> 
         <motion.div  initial={{ opacity: 0, scale: 0.5, x: -350 }} 
     animate={{ opacity: 1, scale: 1, x:0 }}
