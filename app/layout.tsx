@@ -23,7 +23,7 @@ export default async function RootLayout({
 }) {
   return(
     <html lang="en">
-      <body className={`bg-backdark ${grotesk.className}`}>
+      <body className={`bg-[url('../public/mohammadreza.webp')] ${grotesk.className}`}>
         <Hydrate>
       <Nav/>
 
