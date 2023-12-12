@@ -46,7 +46,7 @@ const Skills = (props: Props) => {
         AOS.init({duration: 500});
       }, [])
   return (
-    <div className='' id="skills">
+    <div className={`bg-backdark bg-opacity-50`} id="skills">
     <motion.div className='flex my-18 pt-10  px-9 md:justify-around'>
         <motion.h1 className=' text-4xl text-white font-bold'><motion.span className=' mx-1 text-4xl text-purple-500 font-bold'>#</motion.span>Skills</motion.h1>
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
@@ -55,10 +55,10 @@ const Skills = (props: Props) => {
     </motion.div>
 
     <div className='flex flex-col-reverse justify-center lg:flex-row px-9'> 
-        <div className='lg:w-1/2 h-96'>
+        {/* <div className='lg:w-1/2 h-96'>
             <Lottie animationData={Skill}/>
 
-        </div>
+        </div> */}
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-end  w-1/2'>
             

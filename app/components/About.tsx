@@ -17,7 +17,7 @@ const About = (props: Props) => {
         </motion.div>
         </motion.div>
 
-        <div className='flex my-18 py-10 flex-wrap text-slate-400 px-9 justify-evenly items-center'>
+        <div className='flex my-18 py-10 flex-wrap text-slate-400 px-9 justify-evenly items-center bg-slate-800 bg-opacity-70 m-8 rounded-2xl'>
             <div className='lg:w-1/2 m-4'>
                 <p>
                 Welcome to my digital abode, where lines of code converge to craft innovative solutions and bring ideas to life.<br></br> 

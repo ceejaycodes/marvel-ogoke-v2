@@ -19,7 +19,7 @@ const page = (props: Props) => {
 
   return (
     <motion.div>
-      <motion.div   className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-cover pt-48`}>
+      <motion.div   className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-cover bg-fixed pt-48`}>
       <Hero/>
       </motion.div>
       <Projects/>
@@ -27,7 +27,7 @@ const page = (props: Props) => {
       <Skills/>
      
 
-     <motion.div className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-cover`}>   
+     <motion.div className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-fixed bg-cover`}>   
       <About/>
      
       <Contact/>
