@@ -64,9 +64,9 @@ const Nav = (props: Props) => {
     animate={{ opacity: 1, scale: 1, x:0 }}
      exit={{opacity: 0, x: -120}}
     transition={{ duration: 0.5}}  
-    className='absolute w-screen h-screen bg-[url("../public/mohammadreza.webp")] text-3xl md:hidden  text-gray-300  z-10  justify-center py-20 -mt-8 '>
+    className='absolute w-screen h-screen bg-[url("../public/mohammadreza.webp")] text-3xl md:hidden  text-gray-300  z-10  justify-center py-10 -mt-8 pt-20 '>
 
-            <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-20 w-21 justify-center px-20 ' >
+            <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-16 w-21 justify-center px-20 ' >
 
             
                 <motion.li
@@ -97,7 +97,7 @@ const Nav = (props: Props) => {
 
                 
             </motion.ul>
-            <div className='flex gap-7 justify-center mt-9 py-14'>
+            <div className='flex gap-7 justify-center mt-20'>
             <motion.a initial={{scale:0, opacity: 0, y: 300}} animate={{scale:1, opacity:1,y: 0}} transition={{type:"spring",duration: 1.2}} target='_blank' href='https://linkedin.com/in/marvel-ogoke'><Image className='w-12' src={LinkedIn} alt='linkedIn Link' height={400} width={400}/></motion.a>
             <motion.a initial={{scale:0, opacity: 0, y: 400}} animate={{scale:1, opacity:1,y: 0}} transition={{type:"spring",duration: 1.7}} target='_blank' href='https://github.com/ceejaycodes'><Image className='w-12' src={Github} alt='Github Link'  height={400} width={400}/></motion.a>
             <motion.a initial={{scale:0, opacity: 0, y: 500}} animate={{scale:1, opacity:1,y: 0}} transition={{type:"spring",duration: 2.1}} target='_blank' href='mailto:dreelceejay79@yahoo.com'><Image className='w-12' src={Email} alt='Email Link'  height={400} width={400}/></motion.a>
