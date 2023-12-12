@@ -60,7 +60,7 @@ const Nav = (props: Props) => {
         </div>
        { navToggle.isOpen && 
        <AnimatePresence> 
-        <motion.div  initial={{ opacity: 0, scale: 0.5, y: -200 }} 
+        <motion.div  initial={{ opacity: 0, scale: 0.5, y: -350 }} 
     animate={{ opacity: 1, scale: 1, y:0 }}
      exit={{opacity: 0, x: -120}}
     transition={{ duration: 1}}  
