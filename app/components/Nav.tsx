@@ -25,7 +25,7 @@ const Nav = (props: Props) => {
     }
 
   return (
-    <div className={`bg-[url('../public/mohammadreza.webp')] pt-3`}>
+    <div className={`fixed top-0 left-0 right-0 bg-[url('../public/mohammadreza.webp')] z-50 h-20`}>
         
         <div className='mx-3 flex justify-between mt-5 pb-8'>
        <div className='flex'>

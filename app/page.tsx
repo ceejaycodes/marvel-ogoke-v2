@@ -18,8 +18,8 @@ const page = (props: Props) => {
   let y = useTransform(scrollY, [0,1], ["0%", "100%"])
 
   return (
-    <motion.div >
-      <motion.div   className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-cover`}>
+    <motion.div>
+      <motion.div   className={`bg-[url('../public/mohammadreza.webp')] bg-no-repeat bg-cover pt-48`}>
       <Hero/>
       </motion.div>
       <Projects/>
