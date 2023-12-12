@@ -8,8 +8,6 @@ import Line from '@/public/line.png'
 import LinkedIn from '@/public/Linkedin.png'
 import Github from '@/public/Github.png'
 import Email from '@/public/Email.png'
-import LogoAi from '@/public/logoAi.webp'
-import { useNavToggle } from '@/store'
 import LogoRem from '@/public/Logo-1.json'
 import Lottie from 'lottie-react'
 
@@ -20,7 +18,7 @@ type Props = {}
 
 const Nav = (props: Props) => {
 
-    const navToggle = useNavToggle();
+
     const [open, setopen] = useState(false)
     const handleToggle = ()=>{
         setopen(!open)
@@ -51,7 +49,7 @@ const Nav = (props: Props) => {
             
             whileTap={{  scale: [0.7, 1, 0.7, 1, 1] }}  
             onClick={handleToggle}>
-            <Image className='mt-1 h-6 w-7' src={navToggle.isOpen ? Close : Open} alt='hamburger closed' width={45} height={45}/> 
+            <Image className='mt-1 h-6 w-7' src={open ? Close : Open} alt='hamburger closed' width={45} height={45}/> 
             </motion.div>
             <div className='hidden md:block'>
                 <ul className=' flex  gap-8 mr-12 text-gray-400'>
