@@ -116,7 +116,7 @@ const Projects = (props: Props) => {
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
         <Image  src={Headline} alt={'just another line'} />
     </motion.div>
-       <Link href={'/projects'}> <p className='mt-3 mx-1 text-xs text-white'>View More </p></Link>
+       <a href={'/projects'}> <p className='mt-3 mx-1 text-xs text-white'>View More </p></a>
     </motion.div>
 
     <div className='flex flex-wrap mx-6 justify-evenly ' >
