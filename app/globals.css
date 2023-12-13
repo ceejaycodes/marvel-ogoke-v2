@@ -19,3 +19,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #000312;  /* creates padding around scroll thumb */
 }
+
+@media (pointer: coarse) {
+  .background-fixed {
+          background-attachment: fixed !important;
+  }
+}
+

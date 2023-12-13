@@ -23,12 +23,11 @@ export default async function RootLayout({
 }) {
   return(
     <html lang="en">
-      <body className={`bg-[url('../public/mohammadreza.webp')] bg-top bg-cover bg-fixed w-full h-full ${grotesk.className}`}>
+      <body className={`${grotesk.className}`}>
         <Hydrate>
       <Nav/>
 
       {children}
-
       <Footer/>
       </Hydrate>
       </body>

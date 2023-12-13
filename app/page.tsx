@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
+import Footer from './components/Footer'
 // import Moh  from '@/public/mohammadreza.webp'
 
 type Props = {}
@@ -18,7 +19,7 @@ const page = (props: Props) => {
   let y = useTransform(scrollY, [0,1], ["0%", "100%"])
 
   return (
-    <motion.div>
+    <motion.div className=''>
       <motion.div   className={`pt-24 md:pt-48`}>
       <Hero/>
       </motion.div>
@@ -32,6 +33,7 @@ const page = (props: Props) => {
      
       <Contact/>
       </motion.div>
+     
     </motion.div>
   )
 }

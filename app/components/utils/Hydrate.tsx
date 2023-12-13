@@ -14,7 +14,7 @@ export default function Hydrate({children}: {children: ReactNode}){
     
     return(
         <>
-    {isHydrated ? <div className={`bg-[url('../public/mohammadreza.webp')] bg-top bg-cover bg-fixed w-full h-full`}>{children}</div> : <div className='h-96 w-96'><Lottie animationData={Animate}/></div>}
+    {isHydrated ? <body className={`flex flex-col min-h-screen`}><div className={`flex-grow bg-[url('../public/mohammadreza.webp')] bg-cover bg-fixed w-full h-full bg-center  lg:bg-bottom relative`}>{children} </div></body> : <div className='h-96 w-96'><Lottie animationData={Animate}/></div>}
     </>
     )
 }
