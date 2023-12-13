@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
   return (
     <motion.div  className='md:flex justify-between'>
     <motion.div   className='lg:pl-12 ml-11'>
-        <motion.h1  initial={{scale: 0.2, y: 700}}  animate={{scale:1, y: 0}} transition={{type:"spring", duration: 1}}  className='text-7xl font-black lg:tracking-wider drop-shadow-2xl text-white'>
+        <motion.h1  initial={{scale: 0.2, y: 700}}  animate={{scale:1, y: 0}} transition={{type:"spring", duration: 1}}  className='text-5xl font-black lg:tracking-wider lg:text-7xl drop-shadow-2xl text-white'>
             Marvel Is <br></br> A <motion.h1 initial={{scale: 0, y: 500}}  animate={{scale:1, y: 0}} transition={{type:"spring",duration: 3}} className='text-purple-500 drop-shadow-2xl'>Full</motion.h1> Stack <motion.h1 initial={{scale: 0, y: 100}}  animate={{scale:1, y: 0}} transition={{duration: 2}} className='text-purple-500'>Software</motion.h1> Engineer
         </motion.h1>
         <div className='py-8 text-gray-300'>
