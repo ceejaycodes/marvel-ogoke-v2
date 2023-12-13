@@ -24,8 +24,21 @@ const Nav = (props: Props) => {
         setopen(!open)
     }
 
+    const [color, setcolor] = useState(false)
+
+    const changeCol = ()=>  {
+        if (window.scrollY >= 90){
+            setcolor(true)
+        }
+        else{
+            setcolor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeCol)
+
   return (
-    <div className={`fixed top-0 left-0 right-0 bg-[url('../public/mohammadreza.webp')] z-50 h-20`}>
+    <div className={color? 'head-bg fixed top-0 left-0 right-0 z-50 h-20' : 'fixed top-0 left-0 right-0 z-50 h-20'}>
         
         <div className='mx-3 flex justify-between mt-5 pb-8'>
        <div className='flex'>
@@ -67,7 +80,7 @@ const Nav = (props: Props) => {
      exit={{opacity: 0, x: -120}}
     transition={{ duration: 0.5}} 
     layout onClick={()=>setopen(false)} 
-    className='absolute w-screen h-screen bg-[url("../public/mohammadreza.webp")] text-3xl md:hidden  text-gray-300  z-10  justify-center pt-24 -mt-8 '>
+    className='absolute w-screen h-screen  text-3xl md:hidden  text-gray-300  z-10  justify-center pt-24 -mt-8 '>
 
             <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-16 w-21 justify-center px-20 ' >
 
