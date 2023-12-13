@@ -73,8 +73,9 @@ const Nav = (props: Props) => {
                 </ul>
             </div>
         </div>
+        <AnimatePresence mode='popLayout'> 
        { open && 
-       <AnimatePresence> 
+       
         <motion.div   initial={{ opacity: 0, scale: 0.5, x: -350 }} 
     animate={{ opacity: 1, scale: 1, x:0 }}
      exit={{opacity: 0, x: -120}}
@@ -119,8 +120,9 @@ const Nav = (props: Props) => {
             <motion.a initial={{scale:0, opacity: 0, y: 500}} animate={{scale:1, opacity:1,y: 0}} transition={{type:"spring",duration: 2.1}} target='_blank' href='mailto:dreelceejay79@yahoo.com'><Image className='w-12' src={Email} alt='Email Link'  height={400} width={400}/></motion.a>
         </div>
         </motion.div>
-        </AnimatePresence>
+        
         }
+        </AnimatePresence>
     </div>
   )
 }
