@@ -6,26 +6,16 @@ a {
   cursor: pointer;
 }
 
-@media (pointer: coarse) {
-  .gb-container {
-      background-attachment: inital !important;
-  }
+body::-webkit-scrollbar {
+  width: 9px;               /* width of the entire scrollbar */
 }
 
-@media only screen and (max-width: 989px) {
-  .responsive #top .avia-full-stretch{
-  background-attachment: scroll !important;
-  }
-  }
+body::-webkit-scrollbar-track {
+  background: #000312;       /* color of the tracking area */
+}
 
-  @media only screen and (max-width: 989px) {
-    .avia-safari #top .avia-full-stretch{
-    background-attachment: scroll !important;
-    }
-    }
-
-    @media only screen and (max-width: 1024px) {
-      .avia-safari #top .avia-full-stretch{
-      background-attachment: scroll !important;
-      }
-      }
+body::-webkit-scrollbar-thumb {
+  background-color: grey;   /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #000312;  /* creates padding around scroll thumb */
+}
