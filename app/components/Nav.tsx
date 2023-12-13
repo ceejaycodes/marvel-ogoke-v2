@@ -75,12 +75,12 @@ const Nav = (props: Props) => {
         </div>
        { open && 
        <AnimatePresence> 
-        <motion.div  initial={{ opacity: 0, scale: 0.5, x: -350 }} 
+        <motion.div   initial={{ opacity: 0, scale: 0.5, x: -350 }} 
     animate={{ opacity: 1, scale: 1, x:0 }}
      exit={{opacity: 0, x: -120}}
     transition={{ duration: 0.5}} 
     layout onClick={()=>setopen(false)} 
-    className='absolute w-screen h-screen  text-3xl md:hidden  text-gray-300  z-10  justify-center pt-24 -mt-8 '>
+    className='absolute w-screen h-screen  text-3xl md:hidden head-bg text-gray-300  z-10  justify-center pt-24 -mt-8 '>
 
             <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-16 w-21 justify-center px-20 ' >
 
