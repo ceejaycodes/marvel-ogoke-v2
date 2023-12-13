@@ -6,4 +6,9 @@ a {
   cursor: pointer;
 }
 
+@media (pointer: coarse) {
+  .gb-container {
+      background-attachment: inital !important;
+  }
+}
 
