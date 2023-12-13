@@ -12,3 +12,20 @@ a {
   }
 }
 
+@media only screen and (max-width: 989px) {
+  .responsive #top .avia-full-stretch{
+  background-attachment: scroll !important;
+  }
+  }
+
+  @media only screen and (max-width: 989px) {
+    .avia-safari #top .avia-full-stretch{
+    background-attachment: scroll !important;
+    }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .avia-safari #top .avia-full-stretch{
+      background-attachment: scroll !important;
+      }
+      }
