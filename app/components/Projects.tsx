@@ -110,13 +110,13 @@ const Projects = (props: Props) => {
 
    
   return (
-    <div id='projects'>
+    <div className='bg-slate-800 bg-opacity-70 m-8 rounded-2xl' id='projects'>
     <motion.div className='flex my-18 pt-10 px-9 md:justify-around'>
         <motion.h1 className=' text-4xl text-white font-bold'><motion.span className=' mx-1 text-4xl text-purple-500 font-bold'>#</motion.span>Projects</motion.h1>
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
         <Image  src={Headline} alt={'just another line'} />
     </motion.div>
-       <a href={'/projects'}> <p className='mt-3 mx-1 text-xs text-white'>View More </p></a>
+       <a href={'/projects'}> <p className='mt-3 mx-1 text-xs text-white border border-solid border-e-gray-300 p-2 shadow-md'>View More </p></a>
     </motion.div>
 
     <div className='flex flex-wrap mx-6 justify-evenly ' >

@@ -46,7 +46,7 @@ const Skills = (props: Props) => {
         AOS.init({duration: 500});
       }, [])
   return (
-    <div className={`bg-backdark bg-opacity-50`} id="skills">
+    <div className={`bg-backdark bg-opacity-50 bg-fixed`} id="skills">
     <motion.div className='flex my-18 pt-10  px-9 md:justify-around'>
         <motion.h1 className=' text-4xl text-white font-bold'><motion.span className=' mx-1 text-4xl text-purple-500 font-bold'>#</motion.span>Skills</motion.h1>
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
