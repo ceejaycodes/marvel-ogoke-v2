@@ -22,7 +22,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return(
-    <html lang="en">
+    <html className='bg-backdark' lang="en">
       <body className={`${grotesk.className}`}>
         <Hydrate>
       <Nav/>
