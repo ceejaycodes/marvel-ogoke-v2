@@ -35,7 +35,7 @@ const About = (props: Props) => {
                 </p>
                           
                 {!about &&  <motion.a  initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, repeat: Infinity, repeatType: "reverse"}} className='pointer' onClick={handleAbout}>View More</motion.a>}
-             <br></br> <AnimatePresence  mode='wait'>    {about && <motion.div key="Marvel" initial={{y:- 250 ,scale: 0}} animate={{y: 0, scale: 1, }} transition={{duration: .5}} exit={{y:-450, opacity: 0}} className=''> <p> <strong>Professional Journey:</strong><br></br>
+             <br></br> <AnimatePresence  mode='wait'>    {about && <motion.div key="Marvel" initial={{y:- 250 ,scale: 0}} animate={{y: 0, scale: 1, }} transition={{duration: .5}} exit={{ opacity: 0}} className=''> <p> <strong>Professional Journey:</strong><br></br>
 My journey in the realm of software engineering has been marked by a commitment to continuous learning and a relentless pursuit of excellence. Leveraging a diverse skill set that spans front-end and back-end development,
  I have had the privilege of contributing to a variety of projects, from scalable web applications to intricate software architectures.
 

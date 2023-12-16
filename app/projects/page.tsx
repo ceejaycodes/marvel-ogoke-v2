@@ -68,7 +68,7 @@ const disPlayProj = [
         image: Marvel1,
         name: "Marvel Ogoke",
         github: "https://github.com/ceejaycodes/Marvel-Ogoke",
-        live: "https://marvel-ogoke.vercel.app",
+        live: "https://marvel.cry8.io",
         stack:"React, Vite, Material UI, SCSS",
         description: "A portfolio for Marvel Ogoke"
 
@@ -105,7 +105,7 @@ const disPlayProj = [
 
 const Projects = (props: Props) => {
   return (
-    <div>
+    <div className='bg-slate-800 bg-opacity-70 m-8 rounded-2xl'>
     <motion.div initial={{opacity: 0, scale: 0.5}} 
     animate={{opacity: 1, scale: 1}} transition={{duration: 0.8}} className='flex my-36  px-9 md:justify-around'>
         <motion.h1 className='ml-3 text-4xl text-white font-bold'><motion.span className=' mx-1 text-4xl text-purple-500 font-bold'>#</motion.span>Projects</motion.h1>
