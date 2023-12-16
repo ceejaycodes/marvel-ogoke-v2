@@ -35,8 +35,8 @@ const SingleProject = (props: ProjectProps) => {
         <h2  className='m-2 text-xl font-bold font-white'>{props.name}</h2>
         <p className='text-sm m-2'>{props.description}</p>
         <div className='flex gap-8 my-4'>
-       <a href={props.github}> <button className='text-sm border-solid border border-purple-700 px-3 py-1 text-slate-400 ml-2 '>Github 🔱</button></a>
-       <a href={props.live}> <button className='text-sm border-solid border border-purple-700 px-3 py-1 text-slate-400 ml-2 '>Live 🌍</button></a>
+       <a href={props.github}> <button className='text-sm border-solid border border-slate-400 px-3 py-1 text-slate-400 ml-2 '>Github 🔱</button></a>
+       <a href={props.live}> <button className='text-sm border-solid border border-slate-400 px-3 py-1 text-slate-400 ml-2 '>Live 🌍</button></a>
         </div>
       </div>
 

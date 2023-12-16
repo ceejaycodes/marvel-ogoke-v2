@@ -44,7 +44,7 @@ const disPlayProj = [
         image: Marvel,
         name: "Marvel Ogoke",
         github: "https://github.com/ceejaycodes/marvel-ogoke-v2",
-        live: "https://marvel-ogoke-v2.vercel.app/",
+        live: "https://marvel.cry8.io",
         stack: "Typescript, NextJs, TailwindCSS, Zustand",
         description: "A Portfolio Website for Marvel Ogoke"
 
@@ -116,7 +116,8 @@ const Projects = (props: Props) => {
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
         <Image  src={Headline} alt={'just another line'} />
     </motion.div>
-       <a href={'/projects'}> <p className='mt-3 mx-1 text-xs text-white border border-solid border-e-gray-300 p-2 shadow-md'>View More </p></a>
+       <motion.a   initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .2, repeat: Infinity, repeatType: "reverse"}}
+        href={'/projects'}> <button className='mt-3 mx-1 text-xs text-white border border-solid border-e-gray-300 p-2 shadow-md'>View More... </button></motion.a>
     </motion.div>
 
     <div className='flex flex-wrap mx-6 justify-evenly ' >
