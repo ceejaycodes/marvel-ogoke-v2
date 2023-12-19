@@ -29,3 +29,11 @@ body::-webkit-scrollbar-thumb {
 .head-bg{
   background-image: url("../public/mohammadreza.webp");
 }
+
+.header-bg{
+  height: 7%;
+  box-shadow: 1px 10px 4px 0px rgba(0,0,0,0.48);
+  -webkit-box-shadow: 1px 10px 4px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 10px 4px 0px rgba(0,0,0,0.48);
+  transition: transform ease;
+}

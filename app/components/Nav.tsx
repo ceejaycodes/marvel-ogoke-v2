@@ -38,7 +38,7 @@ const Nav = (props: Props) => {
     window.addEventListener('scroll', changeCol)
 
   return (
-    <div className={color? 'head-bg fixed top-0 left-0 right-0 z-50 h-20' : 'fixed top-0 left-0 right-0 z-50 h-20'}>
+    <div className={color? 'head-bg header-bg fixed top-0 left-0 right-0 z-50 h-20' : 'fixed top-0 left-0 right-0 z-50 h-20'}>
         
         <div className='mx-3 flex justify-between mt-5 pb-8'>
        <div className='flex'>
@@ -81,7 +81,7 @@ const Nav = (props: Props) => {
      exit={{x: -750, scale: 2}}
     transition={{ duration: 0.5}} 
     layout onClick={()=>setopen(false)} 
-    className='absolute w-screen h-screen  text-3xl md:hidden head-bg text-gray-300  z-10  justify-center pt-24 -mt-8 '>
+    className='absolute w-screen h-screen  text-3xl md:hidden head-bg text-gray-300  z-10  justify-center pt-28 -mt-12'>
 
             <motion.ul initial={{scale: 0.5, opacity:0.5}} animate={{ opacity: 1, scale: 1 }} className='flex flex-col gap-16 w-21 justify-center px-20 ' >
 
