@@ -15,7 +15,7 @@ export default function Hydrate({children}: {children: ReactNode}){
     
     return(
         <>
-    {isHydrated ? <body className={`flex flex-col min-h-screen`}><div className="bg-black w-full h-full fixed bg-center bg-cover  lg:bg-bottom"><Lottie animationData={backanim} /></div><div className={`flex-grow  w-full h-full  relative`}>{children} </div></body> : <div className='h-96 w-96'><Lottie animationData={Animate}/></div>}
+    {isHydrated ? <body className={`flex flex-col min-h-screen`}><div className="bg-black w-full h-screen fixed bg-center bg-cover  lg:bg-bottom flex justify-center align-bottom"><Lottie animationData={backanim} /></div><div className={`flex-grow  w-full h-full  relative`}>{children} </div></body> : <div className='h-96 w-96'><Lottie animationData={Animate}/></div>}
     </>
     )
 }
