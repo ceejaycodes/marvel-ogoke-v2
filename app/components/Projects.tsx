@@ -111,7 +111,8 @@ const Projects = (props: Props) => {
    
   return (
     <div className='bg-slate-800 bg-opacity-70 m-8 rounded-2xl' id='projects'>
-    <motion.div className='flex my-18 pt-10 px-9 md:justify-around'>
+    <motion.div   initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }} className='flex my-18 pt-10 px-9 md:justify-around'>
         <motion.h1 className=' text-4xl text-white font-bold'><motion.span className=' mx-1 text-4xl text-purple-500 font-bold'>#</motion.span>Projects</motion.h1>
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
         <Image  src={Headline} alt={'just another line'} />

@@ -24,7 +24,8 @@ const SingleProject = (props: ProjectProps) => {
   
   return (
     <>
-    <motion.div data-aos="flip-left" className='m-4 border border-t-0 border-solid border-slate-400 w-72 h-auto text-slate-400'>
+    <motion.div   initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }} data-aos="flip-left" className='m-4 border border-t-0 border-solid border-slate-400 w-72 h-auto text-slate-400'>
       <div className='border-y border-solid border-slate-400'>
         <Image src={props.image} alt="try"/>
       </div>
