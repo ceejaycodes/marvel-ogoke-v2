@@ -25,7 +25,7 @@ const Contact = (props: Props) => {
         <div className='flex flex-wrap text-slate-400 justify-evenly items-end  bg-black'>
         {/* <div className='h-full w-full opacity-30'> <Lottie animationData={Connect}/></div> */}
            
-            <div className='absolute bg-slate-800 bg-opacity-70 p-8 mt-16  lg:m-8 rounded-2xl  md:mt-72  h-auto w-full '>
+            <div className=' bg-slate-800 bg-opacity-70 p-8 mt-16  lg:m-8 rounded-2xl    h-auto w-full '>
             <div className='ml-24'> <h1 className='md:text-2xl'>You can find me here ␥ </h1></div>
             <div className='flex flex-row gap-10 lg:gap-20 pt-7  p-6'>
           <a target='_blank' href='https://github.com/ceejaycodes'> <span className='flex lg:gap-4 justify-center items-center '><Image className='lg:h-12 lg:w-12' src={Github} alt={'github'}/><h1 className='lg:text-2xl'>Github</h1></span></a> 

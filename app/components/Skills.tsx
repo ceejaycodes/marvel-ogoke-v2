@@ -63,7 +63,7 @@ const Skills = (props: Props) => {
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-end  w-1/2'>
             
-        {AllSkills && AllSkills.map((skillbox: Skillprops) => <motion.div data-aos="flip-up" className='m-4 border border-t-0 border-solid border-slate-400 w-64 h-auto text-slate-400 lg:w-48'>
+        {AllSkills && AllSkills.map((skillbox: Skillprops) => <motion.div key={skillbox.h1} data-aos="flip-up" className='m-4 border border-t-0 border-solid border-slate-400 w-64 h-auto text-slate-400 lg:w-48'>
     
       <div className='flex justify-left align-middleh-8 border-y border-solid border-slate-400'>
       <h6  className='p-2 text-lg font-semi-bold text-white'>{skillbox.h1}</h6>

@@ -31,8 +31,11 @@ const page = (props: Props) => {
      <motion.div>   
       <About/>
      
-      <Contact/>
       </motion.div>
+
+      <div className='pt-40'>
+      <Contact/>
+      </div>
      
     </motion.div>
   )

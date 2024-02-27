@@ -31,7 +31,7 @@ const Hero = (props: Props) => {
     />
     </div>
         <div>
-        <a target='_blank' href='https://www.dropbox.com/scl/fi/9ue1lhypq41vxc49foq8w/Marvel-Ogoke-CV.pdf?rlkey=p9sm1twwrb421hzclxfvxigvn&dl=0'> 
+        <a target='_blank' href='/CV.pdf'> 
           <motion.button initial={{opacity: 0.1, scale: 0}} animate={{opacity: 1, scale: 1}} transition={{duration:1}} whileHover={{opacity: 0.8, scale: 1.1, transition:{duration: 0.2}}} className='flex rounded-lg bg-white p-2 border-purple-500 text-black'>
             <motion.h3>View Resumé</motion.h3>
             <motion.span className='h-9 w-9 -mt-3 mx-3'>
