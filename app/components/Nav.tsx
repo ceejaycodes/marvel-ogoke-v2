@@ -68,7 +68,7 @@ const Nav = (props: Props) => {
                 <ul className=' flex  gap-8 mr-12 text-gray-400'>
                     <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='/projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</a></motion.li>
                 </ul>
             </div>
@@ -102,7 +102,7 @@ const Nav = (props: Props) => {
                 <motion.li 
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x: 0}} transition={{duration: 1}} exit={{  x:200}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2} }} whileTap={{ scale: 1.1 }}>
-                    <a href='#projects' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                    <a href='/projects' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
                         Projects</a>
                 </motion.li>
                 <motion.li
