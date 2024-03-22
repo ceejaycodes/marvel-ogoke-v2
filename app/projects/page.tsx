@@ -22,8 +22,8 @@ const disPlayProj = [
     {
         image: Potify,
         name: "Potify",
-        github: "https://github.com/ceejaycodes/Potify",
-        live: "https://potify-seven.vercel.app/",
+        github: "https://github.com/ceejaycodes/potify",
+        live: "https://potify-o22d.onrender.com/",
         stack: "Typescript, NextJs, Prisma, Google Auth",
         description: "An Online Herb Dispensary built with Stripe! "
 
