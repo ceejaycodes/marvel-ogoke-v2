@@ -37,3 +37,7 @@ body::-webkit-scrollbar-thumb {
   -moz-box-shadow: 1px 10px 4px 0px rgba(0,0,0,0.48);
   transition: transform ease;
 }
+
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}

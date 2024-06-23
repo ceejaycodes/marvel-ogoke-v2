@@ -29,13 +29,17 @@ const Nav = (props: Props) => {
     const changeCol = ()=>  {
         if (window.scrollY >= 90){
             setcolor(true)
+            setopen(false)
         }
+
         else{
             setcolor(false)
         }
     }
 
     window.addEventListener('scroll', changeCol)
+
+  
 
   return (
     <div className={color? 'head-bg header-bg fixed top-0 left-0 right-0 z-50 h-20' : 'fixed top-0 left-0 right-0 z-50 h-20'}>
@@ -66,10 +70,10 @@ const Nav = (props: Props) => {
             </motion.div>
             <div className='hidden md:block'>
                 <ul className=' flex  gap-8 mr-12 text-gray-400'>
-                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</a></motion.li>
                     <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='/projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</a></motion.li>
                 </ul>
             </div>
         </div>
@@ -89,14 +93,14 @@ const Nav = (props: Props) => {
                 <motion.li
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x:0}} transition={{type:"spring",duration: .6}} exit={{  x:-100}}
                   whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }} >
-                    <a href='#about' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                    <a href='/#about' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
                         About Me</a>
                 </motion.li>
 
                 <motion.li 
                 initial={{ scale: 0,x:300}} animate={{scale: 1, x:0}} transition={{duration: .8}} exit={{  x:100}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2}}} whileTap={{ scale: 1.1 }} >
-                   <a href='#skills' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                   <a href='/#skills' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
                         Skills</a>
                 </motion.li>
                 <motion.li 
@@ -108,7 +112,7 @@ const Nav = (props: Props) => {
                 <motion.li
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x:0}} transition={{duration:1.3}} exit={{  x:100}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2} }} whileTap={{ scale: 1.1 }}>
-                   <a href='#contact' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                   <a href='/#contact' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
                         Connect</a>
                 </motion.li>
 

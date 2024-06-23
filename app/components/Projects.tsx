@@ -14,6 +14,8 @@ import Marvel1 from '@/public/Marvel1.webp'
 import Commerce from '@/public/commerce.dc14299386a002242db8.webp'
 import Interiorize from '@/public/interiorize.webp'
 import  SamGreen from '@/public/SamGreen.webp'
+import RabbiExchange from '@/public/rabbi-exchange.png';
+import Momocodes from '@/public/momo-codes.png';
 import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -23,6 +25,34 @@ type Props = {}
 
 const disPlayProj = [
     {
+        image: RabbiExchange,
+        name: "Rabbi Exchange",
+        github: "https://github.com/ceejaycodes",
+        live: "https://rabbiexchange.vercel.app",
+        stack: "Typescript, NextJs, Prisma, Google Auth",
+        description: "A P2P Exchange built with Auth0 and Whatsapp APIs! "
+
+    },
+   
+    {
+        image: Interiorize,
+        name: "Interiorize",
+        github: "https://github.com/ceejaycodes/Interiorize",
+        live: "https://youtu.be/iM7rvjiRRGA",
+        stack: "Python, Flask, SCSS, SQLITE3",
+        description: "A web app built on flask that helps users search for furniture stores close to them"
+
+    },
+    {
+        image: SamGreen,
+        name: "Sam Green Tips",
+        github: "https://github.com/orgs/samgreentipsv2/repositories",
+        live: "https://samgreentips.com",
+        stack: "Python, Typescript, Django, React, PostgreSQL",
+        description: "A sports prediciton website"
+
+    },
+    {
         image: Potify,
         name: "Potify",
         github: "https://github.com/ceejaycodes/potify",
@@ -31,6 +61,16 @@ const disPlayProj = [
         description: "An Online Herb Dispensary built with Stripe! "
 
     },
+    {
+        image: Momocodes,
+        name: "Momo Codes",
+        github: "https://github.com/ceejaycodes/potify",
+        live: "https://potify-o22d.onrender.com/",
+        stack: "HTML5, CSS3, Vanilla JS ",
+        description: "A Portfolio for Morin Orinsola "
+
+    },
+  
     {
         image: Dusky,
         name: "Dashboard UI",
@@ -85,24 +125,8 @@ const disPlayProj = [
         description: "An online bidding store built on Django"
 
     },
-    {
-        image: Interiorize,
-        name: "Interiorize",
-        github: "https://github.com/ceejaycodes/Interiorize",
-        live: "https://youtu.be/iM7rvjiRRGA",
-        stack: "Python, Flask, SCSS, SQLITE3",
-        description: "A web app built on flask that helps users search for furniture stores close to them"
-
-    },
-    {
-        image: SamGreen,
-        name: "Sam Green Tips",
-        github: "https://github.com/orgs/samgreentipsv2/repositories",
-        live: "https://samgreentips.com",
-        stack: "Python, Typescript, Django, React, PostgreSQL",
-        description: "A sports prediciton website"
-
-    },
+  
+   
    
 ]
 
@@ -117,7 +141,7 @@ const Projects = (props: Props) => {
         <motion.div className='mt-5 mx-2 w-24 md:w-full'>
         <Image  src={Headline} alt={'just another line'} />
     </motion.div>
-       <motion.a   initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .2, repeat: Infinity, repeatType: "reverse"}}
+       <motion.a   initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2, repeat: Infinity, repeatType: "reverse"}}
         href={'/projects'}> <button className='mt-3 mx-1 text-xs text-white border border-solid border-e-gray-300 p-2 shadow-md'>View More... </button></motion.a>
     </motion.div>
 
