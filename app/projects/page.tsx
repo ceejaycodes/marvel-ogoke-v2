@@ -14,11 +14,41 @@ import Marvel1 from '@/public/Marvel1.webp'
 import Commerce from '@/public/commerce.dc14299386a002242db8.webp'
 import Interiorize from '@/public/interiorize.webp'
 import  SamGreen from '@/public/SamGreen.webp'
+import RabbiExchange from '@/public/rabbi-exchange.png';
+import Momocodes from '@/public/momo-codes.png';
 
 
 type Props = {}
 
 const disPlayProj = [
+    {
+        image: RabbiExchange,
+        name: "Rabbi Exchange",
+        github: "https://github.com/ceejaycodes",
+        live: "https://rabbi-exchange.vercel.app",
+        stack: "Typescript, NextJs, Prisma, Google Auth",
+        description: "A P2P Exchange built with Auth0 and Whatsapp APIs! "
+
+    },
+   
+    {
+        image: Interiorize,
+        name: "Interiorize",
+        github: "https://github.com/ceejaycodes/Interiorize",
+        live: "https://youtu.be/iM7rvjiRRGA",
+        stack: "Python, Flask, SCSS, SQLITE3",
+        description: "A web app built on flask that helps users search for furniture stores close to them"
+
+    },
+    {
+        image: SamGreen,
+        name: "Sam Green Tips",
+        github: "https://github.com/orgs/samgreentipsv2/repositories",
+        live: "https://samgreentips.com",
+        stack: "Python, Typescript, Django, React, PostgreSQL",
+        description: "A sports prediciton website"
+
+    },
     {
         image: Potify,
         name: "Potify",
@@ -28,6 +58,16 @@ const disPlayProj = [
         description: "An Online Herb Dispensary built with Stripe! "
 
     },
+    {
+        image: Momocodes,
+        name: "Momo Codes",
+        github: "https://github.com/ceejaycodes/potify",
+        live: "https://potify-o22d.onrender.com/",
+        stack: "HTML5, CSS3, Vanilla JS ",
+        description: "A Portfolio for Morin Orinsola "
+
+    },
+  
     {
         image: Dusky,
         name: "Dashboard UI",
@@ -41,7 +81,7 @@ const disPlayProj = [
         image: Marvel,
         name: "Marvel Ogoke",
         github: "https://github.com/ceejaycodes/marvel-ogoke-v2",
-        live: "https://marvel-ogoke-v2.vercel.app/",
+        live: "https://marvel.cry8.io",
         stack: "Typescript, NextJs, TailwindCSS, Zustand",
         description: "A Portfolio Website for Marvel Ogoke"
 
@@ -68,7 +108,7 @@ const disPlayProj = [
         image: Marvel1,
         name: "Marvel Ogoke",
         github: "https://github.com/ceejaycodes/Marvel-Ogoke",
-        live: "https://marvel.cry8.io",
+        live: "https://marvel-ogoke.vercel.app",
         stack:"React, Vite, Material UI, SCSS",
         description: "A portfolio for Marvel Ogoke"
 
@@ -82,24 +122,8 @@ const disPlayProj = [
         description: "An online bidding store built on Django"
 
     },
-    {
-        image: Interiorize,
-        name: "Interiorize",
-        github: "https://github.com/ceejaycodes/Interiorize",
-        live: "https://youtu.be/iM7rvjiRRGA",
-        stack: "Python, Flask, SCSS, SQLITE3",
-        description: "A web app built on flask that helps users search for furniture stores close to them"
-
-    },
-    {
-        image: SamGreen,
-        name: "Sam Green Tips",
-        github: "https://github.com/orgs/samgreentipsv2/repositories",
-        live: "https://samgreentips.com",
-        stack: "Python, Typescript, Django, React, PostgreSQL",
-        description: "A sports prediciton website"
-
-    },
+  
+   
    
 ]
 

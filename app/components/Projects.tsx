@@ -28,7 +28,7 @@ const disPlayProj = [
         image: RabbiExchange,
         name: "Rabbi Exchange",
         github: "https://github.com/ceejaycodes",
-        live: "https://rabbiexchange.vercel.app",
+        live: "https://rabbi-exchange.vercel.app",
         stack: "Typescript, NextJs, Prisma, Google Auth",
         description: "A P2P Exchange built with Auth0 and Whatsapp APIs! "
 
