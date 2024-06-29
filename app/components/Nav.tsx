@@ -94,7 +94,7 @@ const Nav = (props: Props) => {
                 <motion.li
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x:0}} transition={{type:"spring",duration: .6}} exit={{  x:-100}}
                   whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }} >
-                    <Link href='/#abouLink' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                    <Link href='/#about' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
                         About Me</Link>
                 </motion.li>
 
