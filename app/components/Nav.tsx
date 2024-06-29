@@ -56,11 +56,11 @@ const Nav = (props: Props) => {
            <a target='_blank' href='mailto:dreelceejay79@yahoo.com'><Image className='h-6 w-6' src={Email} alt='Email Link'/></a>
         </div>
         </motion.span>
-        <a href='/'>
+        <Link href='/'>
         <motion.span className='flex h-12 lg:pl-8 lg:h-20'>
             <Lottie animationData={LogoRem} loop={false}  />
             </motion.span>
-            </a>
+            </Link>
         </div>
             <motion.div className='cursor-pointer md:hidden' 
             
