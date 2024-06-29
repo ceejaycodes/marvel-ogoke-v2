@@ -10,6 +10,7 @@ import Github from '@/public/Github.png'
 import Email from '@/public/Email.png'
 import LogoRem from '@/public/Logo-1.json'
 import Lottie from 'lottie-react'
+import Link from 'next/link'
 
 
 
@@ -70,10 +71,10 @@ const Nav = (props: Props) => {
             </motion.div>
             <div className='hidden md:block'>
                 <ul className=' flex  gap-8 mr-12 text-gray-400'>
-                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><a href='/projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</a></motion.li>
-                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><a href='/#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</a></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><Link href='/#about' className=' hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>About Me</Link></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><Link href='/#skills' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Skills</Link></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: -15, scale: 1.2, transition: {duration: 0.5}}}><Link href='/projects' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Projects</Link></motion.li>
+                    <motion.li whileHover={{opacity: 0.5, skewY: 15, scale: 1.2, transition: {duration: 0.5}}}><Link href='/#contact' className='flex gap-1'><p className='text-purple-500 font-bold'>#</p>Connect</Link></motion.li>
                 </ul>
             </div>
         </div>
@@ -93,27 +94,27 @@ const Nav = (props: Props) => {
                 <motion.li
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x:0}} transition={{type:"spring",duration: .6}} exit={{  x:-100}}
                   whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }} >
-                    <a href='/#about' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
-                        About Me</a>
+                    <Link href='/#abouLink' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                        About Me</Link>
                 </motion.li>
 
                 <motion.li 
                 initial={{ scale: 0,x:300}} animate={{scale: 1, x:0}} transition={{duration: .8}} exit={{  x:100}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2}}} whileTap={{ scale: 1.1 }} >
-                   <a href='/#skills' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
-                        Skills</a>
+                   <Link href='/#skills' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                        Skills</Link>
                 </motion.li>
                 <motion.li 
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x: 0}} transition={{duration: 1}} exit={{  x:200}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2} }} whileTap={{ scale: 1.1 }}>
-                    <a href='/projects' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
-                        Projects</a>
+                    <Link href='/projects' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                        Projects</Link>
                 </motion.li>
                 <motion.li
                  initial={{ scale: 0, x:400}} animate={{scale: 1, x:0}} transition={{duration:1.3}} exit={{  x:100}}
                 whileHover={{ scale: 1.2, transition: {duration: 0.2} }} whileTap={{ scale: 1.1 }}>
-                   <a href='/#contact' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
-                        Connect</a>
+                   <Link href='/#contact' className='hover:text-gray-200 flex gap-1'><p className='text-purple-500 font-bold'>#</p>
+                        Connect</Link>
                 </motion.li>
 
                 
